@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Кредитное бюро</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/suggestions-jquery@20.3.0/dist/css/suggestions.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+			<a class="navbar-brand">Кредитное бюро</a>
+			<button
+				class="navbar-toggler"
+				data-target="#my-nav"
+				data-toggle="collapse"
+				aria-controls="my-nav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="my-nav" class="collapse navbar-collapse d-flex justify-content-between">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Главная</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" tabindex="-1">Услуги</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" tabindex="-1">Цены</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" tabindex="-1">Реклама</a>
+					</li>
+				</ul>
+				<form action="" class="search-form w-25">
+					<div class="input-group">
+						<input class="form-control" type="text" name="" placeholder="Поиск" aria-label="Поиск" />
+						<button class="btn btn-outline-light">Поиск</button>
+					</div>
+				</form>
+			</div>
+		</nav>
+
+		<section class="main py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1 class="h1 mt-4 mb-2">
+							Заполните заявку на&nbsp;кредит и&nbsp;узнайте решение за 5&nbsp;минут
+						</h1>
+						<p class="text mt-4 mb-4">
+							Мы отправим вашу заявку в 12 разных банков с высоким рейтингом. Банки будут предлагать вам
+							кредиты, а вам остается только выбрать лучшие условия
+						</p>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group mb-3">
+									<label class="mb-2" for="fio">ФИО</label>
+									<input
+										id="fio"
+										class="form-control name"
+										type="text"
+										name="fio"
+										placeholder="Например, Иванов Иван Иванович"
+									/>
+								</div>
+								<div class="form-group mb-3">
+									<label class="mb-2" for="job">Место работы</label>
+									<input
+										id="job"
+										class="form-control job"
+										type="text"
+										name="job"
+										placeholder="Например, МВидео"
+									/>
+								</div>
+								<div class="form-group mb-3">
+									<label class="mb-2" for="real-address">Фактический адресс</label>
+									<input
+										id="real-address"
+										class="form-control address"
+										type="text"
+										name="real-address"
+										placeholder="г. Казань, ул. Карла Макрса д. 25"
+									/>
+								</div>
+								<div class="form-group mb-3">
+									<label class="mb-2" for="passport">Кем выдан паспорт</label>
+									<input
+										id="passport"
+										class="form-control fms"
+										type="text"
+										name="passport"
+										placeholder="г. Казань, ул. Карла Макрса д. 25"
+									/>
+								</div>
+							</div>
+							<!-- /.col-md-6 -->
+							<div class="col-md-6">
+								<div class="form-group mb-3">
+									<label class="mb-2" for="date">Дата рождения</label>
+									<input id="date" class="form-control" type="date" name="date" placeholder="23.09.1992" />
+								</div>
+								<div class="form-group mb-3">
+									<label class="mb-2" for="address">Адрес прописки</label>
+									<input
+										id="address"
+										class="form-control address"
+										type="address"
+										name="address"
+										placeholder="г. Москва, ул. Ленина д.40, кв. 65"
+									/>
+								</div>
+								<div class="form-group">
+									<label class="mb-2" for="family">Семейное положение</label>
+									<select id="family" class="form-control" name="family">
+										<option>Холост</option>
+										<option>Женат/Замужем</option>
+									</select>
+								</div>
+							</div>
+							<!-- /.col-md-6 -->
+						</div>
+						<!-- /.row -->
+						<button type="submit" class="btn btn-primary mt-4">Отправить заявку</button>
+					</div>
+					<!-- /.col-md-6 -->
+					<div class="col-md-5 offset-md-1">
+						<img src="img/image.jpg" alt="credits" class="mw-100 rounded" />
+					</div>
+					<!-- /.col-md-6 -->
+				</div>
+				<!-- /.row -->
+			</div>
+		</section>
+		<input id="address" name="address" type="text" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@20.3.0/dist/js/jquery.suggestions.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
